@@ -4,8 +4,8 @@ const navLinks = [
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
+    name: "Development",
+    link: "#development",
   },
   {
     name: "Skills",
@@ -27,11 +27,12 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 4, suffix: "+", label: "Technical Certifications" },
+  { value: 5, suffix: "", label: "Hackathons & Competitions Participated" },
+  { value: 80, suffix: "+", label: "GitHub Contributions This Year" },
+  { value: 2, suffix: "+", label: "Months of Internship Experience" },
 ];
+
 
 const logoIconsList = [
   {
@@ -71,21 +72,22 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/light_bulb-removebg-preview.png",
+    title: "Creative Problem Solver",
+    desc: "Translates abstract ideas into functional, elegant web experiences with clarity and intent.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/rocket_laptop-removebg-preview.png",
+    title: "Self-Starter Mentality",
+    desc: "Proactively takes initiative- building, experimenting, and delivering without waiting to be told.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/wrench-removebg-preview.png",
+    title: "Driven by Persistence",
+    desc: "Never gives up easily, debugs deeply, iterates often, and keeps going until it just works.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -112,32 +114,32 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
+    name: "MongoDB",
+    url: "/images/mongo.webp",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "NodeJS",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
+    name: "Microsoft Azure",
+    url: "/images/azure.webp",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
+    name: "Data Manipulation using SQL",
+    url: "/images/sql.png",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -145,39 +147,41 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    review: "Vice President of Unity Streets (2023-24), led multiple student tech initiatives and workshops while maintaining strong academic performance.",
+    imgPath: "/images/msit_logo.png",
+    logoPath: "/images/msit_logo.png",
+    title: "Bachelor of Technology - IT",
+    date: "2022 - 2026",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Currently pursuing B.Tech at Maharaja Surajmal Institute of Technology.",
+      "Relevant coursework in Data Structures, Web Development, and Cloud Computing.",
+      "Cumulative GPA: 8.58 / 10",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "Successfully deployed secure virtual machines, configured Azure Bastion networks, and contributed to NIC's internal cloud infrastructure research.",
+    imgPath: "/images/NIC-LOGO.png",
+    logoPath: "/images/azure.webp",
+    title: "Cloud Intern - NIC (National Informatics Centre)",
+    date: "July 2024 - August 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Worked with Microsoft Azure to deploy VMs and secure networks using Azure Bastion.",
+      "Managed cloud-based MySQL services for backend integration.",
+      "Understood real-world architecture planning and infrastructure security.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    review: "Completed a 6-month intensive MERN Stack certification with in-depth training on frontend and backend development, authentication, state management, and performance optimization.",
+    imgPath: "/images/coding_blocks-removebg-preview.png",
+    logoPath: "/images/mern_logo.png",
+    title: "Full-Stack Developer - MERN Certification",
+    date: "September 2024 - March 2025",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built multiple full-stack projects using MongoDB, Express.js, React, and Node.js.",
+      "Practiced RESTful API development, error handling, and JWT-based authentication.",
+      "Worked on Redux for global state management and performance tuning of React apps.",
+      "Gained hands-on experience in form handling, route protection, and file uploads.",
+      "Applied best practices for folder structuring, modular code, and reusable components.",
     ],
   },
 ];
